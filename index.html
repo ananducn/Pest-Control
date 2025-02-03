@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Engineer's Pest Control</title>
+    <style>
+      /* Custom marker color to green */
+      ul.custom-bullet-color li::marker {
+        color: #a9dd23;
+      }
+    </style>
+  </head>
+
+  <body class="font-sans bg-[#f2f2f2] w-screen">
+    <!-- intro -->
+    <div class="w-screen">
+      <!-- header  -->
+      <header
+        class="flex bg-black w-screen h-10 justify-center sm:justify-end text-[12px] sm:text-base text-white items-center"
+      >
+        <img
+          src="images/iconEmail.png"
+          alt=""
+          class="sm:w-5 sm:h-3 sm:m-2 m-1"
+        />
+        <span>engineerspestcontrol@gamil.com</span>
+        <p class="m-1 sm:text-3xl sm:m-3">|</p>
+        <img
+          src="images/phoneIcon.png"
+          alt=""
+          class="sm:w-4 sm:h-4 m-1 sm:m-2"
+        />
+        <span class="m-1 sm:mr-20">+91-7356587560</span>
+      </header>
+
+      <!-- logo, nav and contact us  -->
+
+      <div
+        class="px-6 w-screen flex justify-between md:justify-center items-center pt-2 md:gap-x-7 md:px-24"
+      >
+        <img
+          src="images/Pest logo png (1).png"
+          alt=""
+          class="h-12 w-auto pt-1 sm:h-24"
+        />
+        <div class="flex-1 flex justify-center">
+          <nav class="hidden md:block">
+            <div
+              class="bg-white md:flex items-center md:gap-14 md:justify-center md:w-[405px] rounded-3xl md:h-9 md:py-6 font-light"
+            >
+              <a href="#">HOME</a>
+              <a href="about.html">ABOUT US</a>
+              <a href="services.html">SERVICES</a>
+            </div>
+          </nav>
+        </div>
+        <div class="flex-grow flex justify-end md:hidden">
+          <i class="fa-solid fa-bars fa-xl sm:fa-2xl"></i>
+        </div>
+        <div>
+          <a href="contact.html">
+            <button
+              class="hidden en md:block bg-[#A9DD23] md:w-[163px] md:h-[40px] rounded-[55px] md:text-base"
+            >
+              Contact us
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- banner -->
+      <section class="w-full sm:px-2 md:px-10 px-2">
+        <div class="flex w-full bg-[#196332] mt-4 rounded-3xl overflow-hidden">
+          <div
+            class="p-6 flex-grow text-white sm:w-1/2 ml-2 sm:px-10 pt-4 sm:pt-0 sm:pb-6 flex flex-col gap-y-3 md:gap-y-3"
+          >
+            <h1
+              class="text-2xl sm:text-2xl sm:my-2 md:text-4xl lg:text-6xl font-bold md:mt-7"
+            >
+              Welcome to Engineer’s Pest Control!
+            </h1>
+            <p class="pt-2 md:block md:text-xl lg:text-2xl text-gray-300">
+              At Engineers Pest Control, we are committed to making your
+              environment pest-free, ensuring a safe and healthy living and
+              working space for you and your family. Join us in our mission to
+              create a cleaner and more hygienic community.
+            </p>
+            <div class="sm:mb-5">
+              <button
+                class="bg-[#a8de21] rounded-3xl px-8 font-light mt-2 text-xs md:text-sm sm:text-xl py-2"
+              >
+                Explore
+              </button>
+              <button
+                class="border border-[#a8de21] rounded-3xl px-8 font-light mt-2 text-xs md:text-sm sm:text-xl py-2"
+              >
+                Get an Appointment
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-[url('images/bannerBackground.png')] bg-cover bg-left-bottom lg:w-[30%] hidden lg:flex rounded-3xl overflow-hidden items-end"
+          >
+            <img
+              src="images/bannerPerson.png"
+              alt="Banner Person"
+              class="w-full object-cover object-bottom self-end"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About us (after the banner)  -->
+
+      <section
+        class="bg-[#1f2426] mt-2 md:mt-20 flex flex-col sm:flex-row items-center sm:px-3 lg:p-10"
+      >
+        <div
+          class="text-white p-4 pb-6 flex flex-col gap-y-2 order-2 sm:order-none sm:gap-y-3"
+        >
+          <span class="text-[#a8de21] text-lg md:text-xl">About us</span>
+          <h2 class="text-xl font-bold md:text-3xl">
+            Your Trusted Pest Control Experts in Kerala
+          </h2>
+          <p class="font-extralight md:text-lg lg:text-2xl">
+            Engineers Pest Control provides top-notch pest control services
+            across Kerala. We use advanced technology and effective techniques
+            to keep your surroundings free from pests while prioritizing your
+            health and safety. From common pests to termites and rodents, our
+            experienced team handles it all. Choose us for reliable, efficient,
+            and professional pest control solutions.
+          </p>
+          <button
+            class="bg-[#a8de21] py-1 rounded-3xl w-32 sm:w-44 md:text-2xl mt-3 mb-3"
+          >
+            Read more
+          </button>
+        </div>
+        <div class="p-5 order-1 sm:order-none">
+          <img src="images/second section.png" alt="" class="rounded-2xl" />
+        </div>
+      </section>
+
+      <!-- 3rd section (why choose engineers pest control?)  -->
+
+      <section class="flex flex-col gap-y-3 p-4 sm:py-14 bg-[#ffffff]">
+        <div class="flex flex-col gap-y-2 text-center items-center my-8">
+          <span class="text-lg lg:text-xl md:max-w-72 text-[#a8de21]"
+            >Our specialties</span
+          >
+          <h2
+            class="font-bold text-xl md:text-2xl lg:text-4xl md:max-w-lg md:mb-8"
+          >
+            Why choose Engineer’s pest control?
+          </h2>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-14 sm:gap-x-5 sm:px-6 md:gap-x-7 md:px-10 lg:px-36 lg:gap-x-16"
+        >
+          <div class="flex flex-col gap-y-2 text-center items-center">
+            <img src="images/1.png" alt="" class="w-24" />
+            <h4 class="font-semibold text-lg">Expert team</h4>
+            <p class="text-gray-500">
+              Our team of trained professionals provides effective, tailored
+              pest control solutions.
+            </p>
+          </div>
+          <div class="flex flex-col gap-y-2 text-center items-center">
+            <img src="images/2.png" alt="" class="w-24" />
+            <h4 class="font-semibold text-lg">Advanced technology</h4>
+            <p class="text-gray-500">
+              We use cutting-edge technology for superior, efficient pest
+              control solutions
+            </p>
+          </div>
+          <div class="flex flex-col gap-y-2 text-center items-center">
+            <img src="images/3.png" alt="" class="w-24" />
+            <h4 class="font-semibold text-lg">Eco-friendly</h4>
+            <p class="text-gray-500">
+              Our eco-friendly methods ensure safe, non-toxic pest control for
+              your environment.
+            </p>
+          </div>
+          <div class="flex flex-col gap-y-2 text-center items-center">
+            <img src="images/4.png" alt="" class="w-24" />
+            <h4 class="font-semibold text-lg">Comprehensive services</h4>
+            <p class="text-gray-500">
+              We offer a full range of services, tackling all types of pests
+              effectively.
+            </p>
+          </div>
+          <div class="flex flex-col gap-y-2 text-center items-center">
+            <img src="images/5.png" alt="" class="w-24" />
+            <h4 class="font-semibold text-lg">Customer satisfaction</h4>
+            <p class="text-gray-500">
+              Your satisfaction is our top priority, with results you can trust.
+            </p>
+          </div>
+          <div class="flex flex-col gap-y-2 text-center items-center">
+            <img src="images/6.png" alt="" class="w-24" />
+            <h4 class="font-semibold text-lg">Affordable pricing</h4>
+            <p class="text-gray-500">
+              We provide top-quality services at competitive, affordable prices.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4th section (Our excellent solutions keep your space pest-free) -->
+      <section class="bg-[#f2f2f2] p-4">
+        <div class="flex flex-col gap-y-2 text-center items-center my-8">
+          <span class="text-lg lg:text-xl md:max-w-72 text-[#a8de21]"
+            >Our solutions</span
+          >
+          <h2
+            class="font-bold text-xl md:text-2xl lg:text-4xl md:max-w-lg md:mb-8"
+          >
+            Our excellent solutions keep your space pest-free
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4">
+          <div
+            class="bg-[#ffffff] px-3 py-5 flex flex-col gap-y-3 text-center items-center rounded-2xl"
+          >
+            <img src="images/11.png" alt="" class="w-28 pt-7" />
+            <h4 class="font-semibold text-lg">Common Pest</h4>
+            <p class="text-gray-500">
+              We are familiar with seeing a wide range of common pets in our
+              surroundings such as ants, cockroaches, spiders, lizards,
+              silverfish, and firebrats.
+            </p>
+            <button
+              class="bg-[#a8de21] py-1 rounded-3xl w-32 sm:w-44 mt-3 mb-3 font-light"
+            >
+              Read more
+            </button>
+          </div>
+          <div
+            class="bg-[#ffffff] px-3 py-5 flex flex-col gap-y-3 text-center items-center rounded-2xl"
+          >
+            <img src="images/22.png" alt="" class="w-28 pt-7" />
+            <h4 class="font-semibold text-lg">Anti-Termite Treatment</h4>
+            <p class="text-gray-500">
+              We are familiar with seeing a wide range of common pets in our
+              surroundings such as ants, cockroaches, spiders, lizards,
+              silverfish, and firebrats.
+            </p>
+            <button
+              class="bg-[#a8de21] py-1 rounded-3xl w-32 sm:w-44 mt-3 mb-3 font-light"
+            >
+              Read more
+            </button>
+          </div>
+          <div
+            class="bg-[#ffffff] px-3 py-5 flex flex-col gap-y-3 text-center items-center rounded-2xl"
+          >
+            <img src="images/33.png" alt="" class="w-28 pt-7" />
+            <h4 class="font-semibold text-lg">Rodent Control</h4>
+            <p class="text-gray-500">
+              We are familiar with seeing a wide range of common pets in our
+              surroundings such as ants, cockroaches, spiders, lizards,
+              silverfish, and firebrats.
+            </p>
+            <button
+              class="bg-[#a8de21] py-1 rounded-3xl w-32 sm:w-44 mt-3 mb-3 font-light"
+            >
+              Read more
+            </button>
+          </div>
+          <div
+            class="bg-[#ffffff] px-3 py-5 flex flex-col gap-y-3 text-center items-center rounded-2xl"
+          >
+            <img src="images/44.png" alt="" class="w-28 pt-7" />
+            <h4 class="font-semibold text-lg">Bed bug control</h4>
+            <p class="text-gray-500">
+              We are familiar with seeing a wide range of common pets in our
+              surroundings such as ants, cockroaches, spiders, lizards,
+              silverfish, and firebrats.
+            </p>
+            <button
+              class="bg-[#a8de21] py-1 rounded-3xl w-32 sm:w-44 mt-3 mb-3 font-light"
+            >
+              Read more
+            </button>
+          </div>
+          <div
+            class="bg-[#ffffff] px-3 py-5 flex flex-col gap-y-3 text-center items-center rounded-2xl"
+          >
+            <img src="images/55.png" alt="" class="w-28 pt-7" />
+            <h4 class="font-semibold text-lg">Wood borer control</h4>
+            <p class="text-gray-500">
+              We are familiar with seeing a wide range of common pets in our
+              surroundings such as ants, cockroaches, spiders, lizards,
+              silverfish, and firebrats.
+            </p>
+            <button
+              class="bg-[#a8de21] py-1 rounded-3xl w-32 sm:w-44 mt-3 mb-3 font-light"
+            >
+              Read more
+            </button>
+          </div>
+          <div
+            class="bg-[#ffffff] px-3 py-5 flex flex-col gap-y-3 text-center items-center rounded-2xl"
+          >
+            <img src="images/66.png" alt="" class="w-28 pt-7" />
+            <h4 class="font-semibold text-lg">Fly Control</h4>
+            <p class="text-gray-500">
+              We are familiar with seeing a wide range of common pets in our
+              surroundings such as ants, cockroaches, spiders, lizards,
+              silverfish, and firebrats.
+            </p>
+            <button
+              class="bg-[#a8de21] py-1 rounded-3xl w-32 sm:w-44 mt-3 mb-3 font-light"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form (Get in touch) -->
+      <section class="bg-white py-3">
+        <div class="flex flex-col gap-y-2 text-center items-center my-8">
+          <span class="text-lg lg:text-xl md:max-w-72 text-[#a8de21]"
+            >Get in touch</span
+          >
+          <h2
+            class="font-bold text-xl md:text-2xl lg:text-4xl md:max-w-lg md:mb-8"
+          >
+            Contact us to get started
+          </h2>
+        </div>
+        <form action="#" method="post">
+          <div
+            class="px-5 sm:px-16 md:px-28 lg:px-48 grid grid-cols-1 sm:grid-cols-2 gap-x-4"
+          >
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-bold mb-2"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-bold mb-2"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="phone" class="block text-gray-700 font-bold mb-2"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="location" class="block text-gray-700 font-bold mb-2"
+                >Location</label
+              >
+              <input
+                type="text"
+                id="location"
+                name="location"
+                class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter your location"
+              />
+            </div>
+          </div>
+          <!-- message -->
+          <div class="px-5 sm:px-16 md:px-28 lg:px-48">
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700 font-bold mb-2"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+          </div>
+          <div class="text-center">
+            <button
+              type=""
+              class="bg-[#a8de21] font-light py-1 sm:py-3 rounded-3xl w-32 sm:w-44 md:text-xl mt-3 mb-3"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- footer area  -->
+      <footer class="bg-[#f2f2f2] p-4 sm:px-10 md:px-20 lg:px-28">
+        <div
+          class="hidden sm:block text-center sm:flex-col justify-center items-center mb-5"
+        >
+          <div class="mb-3 flex justify-center items-center">
+            <img src="images/Pest logo png (1).png" class="w-20" alt="" />
+          </div>
+          <p class="text-sm md:text-base">
+            Engineers Pest Control provides advanced, eco-friendly pest control
+            services across Kerala, ensuring safe and hygienic environments for
+            homes and businesses.
+          </p>
+        </div>
+        <div
+          class="flex flex-col mx-4 sm:flex-row sm:justify-center sm:gap-x-10"
+        >
+          <div class="sm:hidden">
+            <div class="mb-3">
+              <img src="images/Pest logo png (1).png" class="w-20" alt="" />
+            </div>
+            <p class="text-[10px]">
+              Engineers Pest Control provides advanced, eco-friendly pest
+              control services across Kerala, ensuring safe and hygienic
+              environments for homes and businesses.
+            </p>
+          </div>
+          <div
+            class="flex gap-x-3 sm:gap-x-11 lg:gap-x-24 mt-4 justify-between"
+          >
+            <div>
+              <h4 class="font-bold mb-4">Menu</h4>
+              <ul
+                class="list-disc list-inside custom-bullet-color flex flex-col gap-y-2 text-xs"
+              >
+                <li>Home</li>
+                <li>About us</li>
+                <li>Service</li>
+                <li>Contact us</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-bold mb-4">Services</h4>
+              <ul
+                class="list-disc list-inside custom-bullet-color flex flex-col gap-y-2 text-xs"
+              >
+                <li>Common pest management</li>
+                <li>Anti-termate treatment</li>
+                <li>Rodent control</li>
+                <li>Bed bug control</li>
+                <li>Wood borer control</li>
+                <li>Fly control</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="flex gap-x-3 mt-4 sm:gap-x-11 lg:gap-x-24 justify-between"
+          >
+            <div class="flex flex-col gap-x-3">
+              <h4 class="font-bold mb-4">Location</h4>
+              <p class="text-xs">Kollam, Adinad, Kerala</p>
+            </div>
+            <div>
+              <h4 class="font-bold mb-4">Contact</h4>
+              <ul
+                class="list-disc list-inside custom-bullet-color flex flex-col gap-y-2 text-xs"
+              >
+                <li>92 032 08 392</li>
+                <li>engineerspest@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="sm:m-4 my-2 mt-4 sm:my-7 border-1 border-gray-300" />
+        <div class="flex flex-col items-center">
+          <p class="text-[8px] sm:text-xs">
+            Copyright © 2024 Engineers pest control.in All Rights Reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
