@@ -19,6 +19,7 @@
         color: #a9dd23;
       }
     </style>
+    <script type="module" src="style.js"></script>
   </head>
 
   <body class="font-sans bg-[#f2f2f2] w-screen">
@@ -45,36 +46,66 @@
 
       <!-- logo, nav and contact us  -->
 
-      <div
-        class="px-6 w-screen flex justify-between md:justify-center items-center pt-2 md:gap-x-7 md:px-24"
-      >
-        <img
-          src="images/Pest logo png (1).png"
-          alt=""
-          class="h-12 w-auto pt-1 sm:h-24"
-        />
-        <div class="flex-1 flex justify-center">
-          <nav class="hidden md:block">
-            <div
-              class="bg-white md:flex items-center md:gap-14 md:justify-center md:w-[405px] rounded-3xl md:h-9 md:py-6 font-light"
-            >
-              <a href="#">HOME</a>
-              <a href="about.html">ABOUT US</a>
-              <a href="services.html">SERVICES</a>
-            </div>
+      <div>
+        <div
+          class="px-6 w-screen flex justify-between md:justify-center items-center pt-2 md:gap-x-7 md:px-24"
+        >
+          <img
+            src="images/Pest logo png (1).png"
+            alt=""
+            class="h-12 w-auto pt-1 sm:h-24"
+          />
+          <div class="flex-1 flex justify-center">
+            <nav class="hidden md:block">
+              <div
+                class="bg-white md:flex items-center md:gap-14 md:justify-center md:w-[405px] rounded-3xl md:h-9 md:py-6 font-light"
+              >
+                <a href="#">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="services.html">SERVICES</a>
+              </div>
+            </nav>
+          </div>
+          <div class="flex-grow flex justify-end md:hidden">
+            <i class="fa-solid fa-bars fa-xl sm:fa-2xl" id="toggle-btn"></i>
+          </div>
+          <div>
+            <a href="contact.html">
+              <button
+                class="hidden en md:block bg-[#A9DD23] md:w-[163px] md:h-[40px] rounded-[55px] md:text-base"
+              >
+                Contact us
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- responsive navbar  -->
+        <div class="hidden" id="responsive-navbar">
+          <nav
+            class="md:hidden absolute top-0 text-white flex justify-center item center bg-black py-2 my-2 w-full h-full"
+          >
+            <ul class="flex flex-col justify-center space-y-8 text-xl">
+              <a href="#">
+                <button
+                  class="text-white text-3xl absolute top-3 right-8 hover:text-[#A9DD23]"
+                  id="close-btn"
+                >
+                  X
+                </button></a
+              >
+
+              <a href="#"> <li class="hover:text-[#A9DD23]">Home</li></a>
+              <a href="about.html">
+                <li class="hover:text-[#A9DD23]">About us</li></a
+              >
+              <a href="services.html">
+                <li class="hover:text-[#A9DD23]">Services</li></a
+              >
+              <a href="contact.html">
+                <li class="hover:text-[#A9DD23]">Contact us</li></a
+              >
+            </ul>
           </nav>
-        </div>
-        <div class="flex-grow flex justify-end md:hidden">
-          <i class="fa-solid fa-bars fa-xl sm:fa-2xl"></i>
-        </div>
-        <div>
-          <a href="contact.html">
-            <button
-              class="hidden en md:block bg-[#A9DD23] md:w-[163px] md:h-[40px] rounded-[55px] md:text-base"
-            >
-              Contact us
-            </button>
-          </a>
         </div>
       </div>
 
@@ -85,7 +116,7 @@
             class="p-6 flex-grow text-white sm:w-1/2 ml-2 sm:px-10 pt-4 sm:pt-0 sm:pb-6 flex flex-col gap-y-3 md:gap-y-3"
           >
             <h1
-              class="text-2xl sm:text-2xl sm:my-2 md:text-4xl lg:text-6xl font-bold md:mt-7"
+              class="text-2xl sm:text-2xl sm:my-2 sm:mt-9 md:text-4xl lg:text-6xl font-bold md:mt-14"
             >
               Welcome to Engineer’s Pest Control!
             </h1>

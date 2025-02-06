@@ -18,6 +18,7 @@
         color: #a9dd23;
       }
     </style>
+    <script type="module" src="style.js"></script>
   </head>
   <body class="font-sans bg-[#f2f2f2] w-screen">
     <!-- header  -->
@@ -33,38 +34,65 @@
 
     <!-- logo, nav and contact us  -->
 
-    <div
-      class="px-6 w-screen flex justify-between md:justify-center items-center pt-2 md:gap-x-7 md:px-24"
-    >
-      <img
-        src="images/Pest logo png (1).png"
-        alt=""
-        class="h-12 w-auto pt-1 sm:h-24"
-      />
-      <div class="flex-1 flex justify-center">
-        <nav class="hidden md:block">
-          <div
-            class="bg-white md:flex items-center md:gap-14 md:justify-center md:w-[405px] rounded-3xl md:h-9 md:py-6 font-light"
-          >
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT US</a>
-            <a href="services.html">SERVICES</a>
-          </div>
+    <div>
+      <div
+        class="px-6 w-screen flex justify-between md:justify-center items-center pt-2 md:gap-x-7 md:px-24"
+      >
+        <img
+          src="images/Pest logo png (1).png"
+          alt=""
+          class="h-12 w-auto pt-1 sm:h-24"
+        />
+        <div class="flex-1 flex justify-center">
+          <nav class="hidden md:block">
+            <div
+              class="bg-white md:flex items-center md:gap-14 md:justify-center md:w-[405px] rounded-3xl md:h-9 md:py-6 font-light"
+            >
+              <a href="#">HOME</a>
+              <a href="about.html">ABOUT US</a>
+              <a href="services.html">SERVICES</a>
+            </div>
+          </nav>
+        </div>
+        <div class="flex-grow flex justify-end md:hidden">
+          <i class="fa-solid fa-bars fa-xl sm:fa-2xl" id="toggle-btn"></i>
+        </div>
+        <div>
+          <a href="contact.html">
+            <button
+              class="hidden en md:block bg-[#A9DD23] md:w-[163px] md:h-[40px] rounded-[55px] md:text-base"
+            >
+              Contact us
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- responsive navbar  -->
+      <div class="hidden" id="responsive-navbar">
+        <nav
+          class="fixed top-0 left-0 w-full h-screen z-50 text-white flex justify-center items-center bg-black"
+        >
+          <ul class="flex flex-col justify-center space-y-8 text-xl">
+            <button
+              class="text-white text-3xl absolute top-3 right-8 hover:text-[#A9DD23]"
+              id="close-btn"
+            >
+              X
+            </button>
+
+            <a href="index.html"> <li class="hover:text-[#A9DD23]">Home</li></a>
+            <a href="#"> <li class="hover:text-[#A9DD23]">About us</li></a>
+            <a href="services.html">
+              <li class="hover:text-[#A9DD23]">Services</li></a
+            >
+            <a href="contact.html">
+              <li class="hover:text-[#A9DD23]">Contact us</li></a
+            >
+          </ul>
         </nav>
       </div>
-      <div class="flex-grow flex justify-end md:hidden">
-        <i class="fa-solid fa-bars fa-xl sm:fa-2xl"></i>
-      </div>
-      <div>
-        <a href="contact.html">
-          <button
-            class="hidden en md:block bg-[#A9DD23] md:w-[163px] md:h-[40px] rounded-[55px] md:text-base"
-          >
-            Contact us
-          </button>
-        </a>
-      </div>
     </div>
+
     <!-- banner  -->
 
     <div
