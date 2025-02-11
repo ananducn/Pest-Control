@@ -48,7 +48,7 @@
             <div
               class="bg-white md:flex items-center md:gap-14 md:justify-center md:w-[405px] rounded-3xl md:h-9 md:py-6 font-light"
             >
-              <a href="#">HOME</a>
+              <a href="index.html">HOME</a>
               <a href="about.html">ABOUT US</a>
               <a href="services.html">SERVICES</a>
             </div>
@@ -58,7 +58,7 @@
           <i class="fa-solid fa-bars fa-xl sm:fa-2xl" id="toggle-btn"></i>
         </div>
         <div>
-          <a href="contact.html">
+          <a href="#">
             <button
               class="hidden en md:block bg-[#A9DD23] md:w-[163px] md:h-[40px] rounded-[55px] md:text-base"
             >
@@ -110,18 +110,18 @@
       </p>
     </div>
     <section class="mt-5 sm:flex sm:justify-center sm:items-center bg-white">
-      <div class="px-5 ml-10 sm:text-xl md:text-2xl">
+      <div class="px-5 pt-5 sm:pt-0 ml-10 sm:text-xl md:text-2xl">
         <h4 class="font-bold mb-4 text-[#a8de21]">Call or email us</h4>
         <ul
           class="list-disc list-inside custom-bullet-color flex flex-col gap-y-2 text-xs sm:text-lg md:text-xl"
         >
-          <li>92 032 08 392</li>
-          <li>engineerspest@gmail.com</li>
+          <li>+91-7356587560</li>
+          <li>engineerspestcontrol@gamil.com</li>
         </ul>
       </div>
 
       <!-- Form (Get in touch) -->
-      <section class="py-3">
+      <section class="bg-white py-3">
         <div class="flex flex-col gap-y-2 text-center items-center my-8">
           <span class="text-lg lg:text-xl md:max-w-72 text-[#a8de21]"
             >Get in touch</span
@@ -132,7 +132,11 @@
             Contact us to get started
           </h2>
         </div>
-        <form action="#" method="post">
+        <form
+          id="contactForm"
+          action="https://formspree.io/f/myzkpgkd"
+          method="POST"
+        >
           <div
             class="px-5 sm:px-16 md:px-28 lg:px-48 grid grid-cols-1 sm:grid-cols-2 gap-x-4"
           >
@@ -146,6 +150,7 @@
                 name="name"
                 class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your name"
+                required
               />
             </div>
             <div class="mb-4">
@@ -158,6 +163,7 @@
                 name="email"
                 class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your email"
+                required
               />
             </div>
             <div class="mb-4">
@@ -170,6 +176,7 @@
                 name="phone"
                 class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your phone number"
+                required
               />
             </div>
             <div class="mb-4">
@@ -185,7 +192,6 @@
               />
             </div>
           </div>
-          <!-- message -->
           <div class="px-5 sm:px-16 md:px-28 lg:px-48">
             <div class="mb-4">
               <label for="message" class="block text-gray-700 font-bold mb-2"
@@ -202,13 +208,16 @@
           </div>
           <div class="text-center">
             <button
-              type=""
+              type="submit"
               class="bg-[#a8de21] font-light py-1 sm:py-3 rounded-3xl w-32 sm:w-44 md:text-xl mt-3 mb-3"
             >
-              Send message
+              Submit
             </button>
           </div>
         </form>
+        <p id="successMessage" class="hidden text-green-500 text-center mt-2">
+          Message sent successfully!
+        </p>
       </section>
     </section>
 
@@ -274,8 +283,8 @@
             <ul
               class="list-disc list-inside custom-bullet-color flex flex-col gap-y-2 text-xs"
             >
-              <li>92 032 08 392</li>
-              <li>engineerspest@gmail.com</li>
+              <li>+91-7356587560</li>
+              <li>engineerspestcontrol@gamil.com</li>
             </ul>
           </div>
         </div>

@@ -269,7 +269,7 @@
             <img src="images/11.png" alt="" class="w-28 pt-7" />
             <h4 class="font-semibold text-lg">Common Pest</h4>
             <p class="text-gray-500">
-              We are familiar with seeing a wide range of common pets in our
+              We are familiar with seeing a wide range of common pest in our
               surroundings such as ants, cockroaches, spiders, lizards,
               silverfish, and firebrats.
             </p>
@@ -285,9 +285,9 @@
             <img src="images/22.png" alt="" class="w-28 pt-7" />
             <h4 class="font-semibold text-lg">Anti-Termite Treatment</h4>
             <p class="text-gray-500">
-              We are familiar with seeing a wide range of common pets in our
-              surroundings such as ants, cockroaches, spiders, lizards,
-              silverfish, and firebrats.
+              Anti-termite treatment focuses on protecting properties from the
+              destructive effects of termites, which can cause significant
+              structural damage.
             </p>
             <button
               class="bg-[#a8de21] py-1 rounded-3xl w-32 sm:w-44 mt-3 mb-3 font-light"
@@ -301,9 +301,9 @@
             <img src="images/33.png" alt="" class="w-28 pt-7" />
             <h4 class="font-semibold text-lg">Rodent Control</h4>
             <p class="text-gray-500">
-              We are familiar with seeing a wide range of common pets in our
-              surroundings such as ants, cockroaches, spiders, lizards,
-              silverfish, and firebrats.
+              Rodent control aims to manage and eliminate rodent populations,
+              such as rats and mice, that pose health risks and cause property
+              damage.
             </p>
             <button
               class="bg-[#a8de21] py-1 rounded-3xl w-32 sm:w-44 mt-3 mb-3 font-light"
@@ -317,9 +317,9 @@
             <img src="images/44.png" alt="" class="w-28 pt-7" />
             <h4 class="font-semibold text-lg">Bed bug control</h4>
             <p class="text-gray-500">
-              We are familiar with seeing a wide range of common pets in our
-              surroundings such as ants, cockroaches, spiders, lizards,
-              silverfish, and firebrats.
+              Our Bed Bug Control service provides thorough treatment of
+              mattresses, furniture, and affected areas to eliminate bed bugs
+              effectively.
             </p>
             <button
               class="bg-[#a8de21] py-1 rounded-3xl w-32 sm:w-44 mt-3 mb-3 font-light"
@@ -333,9 +333,9 @@
             <img src="images/55.png" alt="" class="w-28 pt-7" />
             <h4 class="font-semibold text-lg">Wood borer control</h4>
             <p class="text-gray-500">
-              We are familiar with seeing a wide range of common pets in our
-              surroundings such as ants, cockroaches, spiders, lizards,
-              silverfish, and firebrats.
+              Our Wood Borer Control service targets and eliminates wood-boring
+              insects through precise insecticide injection, safeguarding your
+              wooden structures from damage...
             </p>
             <button
               class="bg-[#a8de21] py-1 rounded-3xl w-32 sm:w-44 mt-3 mb-3 font-light"
@@ -349,9 +349,9 @@
             <img src="images/66.png" alt="" class="w-28 pt-7" />
             <h4 class="font-semibold text-lg">Fly Control</h4>
             <p class="text-gray-500">
-              We are familiar with seeing a wide range of common pets in our
-              surroundings such as ants, cockroaches, spiders, lizards,
-              silverfish, and firebrats.
+              Our Fly Control service focuses on eradicating house flies and
+              other nuisance flies, using effective treatments tailored to your
+              needs to keep your space clean...
             </p>
             <button
               class="bg-[#a8de21] py-1 rounded-3xl w-32 sm:w-44 mt-3 mb-3 font-light"
@@ -374,7 +374,11 @@
             Contact us to get started
           </h2>
         </div>
-        <form action="https://formspree.io/f/myzkpgkd" method="post">
+        <form
+          id="contactForm"
+          action="https://formspree.io/f/myzkpgkd"
+          method="POST"
+        >
           <div
             class="px-5 sm:px-16 md:px-28 lg:px-48 grid grid-cols-1 sm:grid-cols-2 gap-x-4"
           >
@@ -388,6 +392,7 @@
                 name="name"
                 class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your name"
+                required
               />
             </div>
             <div class="mb-4">
@@ -400,6 +405,7 @@
                 name="email"
                 class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your email"
+                required
               />
             </div>
             <div class="mb-4">
@@ -412,6 +418,7 @@
                 name="phone"
                 class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your phone number"
+                required
               />
             </div>
             <div class="mb-4">
@@ -427,7 +434,6 @@
               />
             </div>
           </div>
-          <!-- message -->
           <div class="px-5 sm:px-16 md:px-28 lg:px-48">
             <div class="mb-4">
               <label for="message" class="block text-gray-700 font-bold mb-2"
@@ -444,13 +450,16 @@
           </div>
           <div class="text-center">
             <button
-              type="submite"
+              type="submit"
               class="bg-[#a8de21] font-light py-1 sm:py-3 rounded-3xl w-32 sm:w-44 md:text-xl mt-3 mb-3"
             >
               Submit
             </button>
           </div>
         </form>
+        <p id="successMessage" class="hidden text-green-500 text-center mt-2">
+          Message sent successfully!
+        </p>
       </section>
 
       <!-- footer area  -->
@@ -520,8 +529,8 @@
               <ul
                 class="list-disc list-inside custom-bullet-color flex flex-col gap-y-2 text-xs"
               >
-                <li>92 032 08 392</li>
-                <li>engineerspest@gmail.com</li>
+                <li>+91-7356587560</li>
+                <li>engineerspestcontrol@gamil.com</li>
               </ul>
             </div>
           </div>
